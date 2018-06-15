@@ -3,12 +3,17 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include "Bitmap.h"
 
 using namespace std;
+using namespace caveofprogramming;
 
 int main()
 {
-	cout << "!!! Hello, World !!!";
-    return 0;
+	Bitmap bitmap(800, 600);
+	bitmap.write("test.bmp");
+
+	cout << "Finished." << endl;
+	return 0;
 }
 
